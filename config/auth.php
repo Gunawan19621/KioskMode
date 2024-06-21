@@ -40,6 +40,11 @@ return [
             'driver' => 'session',
             'provider' => 'users',
         ],
+
+        'api' => [
+            'driver' => 'sanctum',
+            'provider' => 'user_kiosks',
+        ],
     ],
 
     /*
@@ -63,6 +68,12 @@ return [
         'users' => [
             'driver' => 'eloquent',
             'model' => App\Models\User::class,
+            // 'model' => App\Models\User_Kiosk::class,
+        ],
+
+        'user_kiosks' => [
+            'driver' => 'eloquent',
+            'model' => App\Models\User_Kiosk::class,
         ],
 
         // 'users' => [

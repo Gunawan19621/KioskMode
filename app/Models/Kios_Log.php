@@ -12,5 +12,7 @@ class Kios_Log extends Model
     protected $fillable = [
         'user_id',
         'email',
+        'login_time',
+        'logout_time',
     ];
 }
